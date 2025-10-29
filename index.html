@@ -3,48 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Lernen Projects</title>
+  <title>Frontend Lernen – Study Portal</title>
   <style>
+    /* --- Основные стили --- */
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
       margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6f8;
       color: #333;
+      line-height: 1.6;
     }
-    ul {
+
+    header {
+      background-color: #0078d7;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      opacity: 0.9;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #005fa3;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       list-style: none;
       padding: 0;
-      max-width: 600px;
-      margin: 30px auto;
+      margin: 0;
     }
-    li {
-      background: white;
-      padding: 15px 20px;
-      margin: 10px 0;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      font-size: 18px;
+
+    nav li {
+      margin: 10px 20px;
     }
-    a {
+
+    nav a {
+      color: #fff;
       text-decoration: none;
-      color: #0078d7;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1.05em;
+      transition: 0.3s;
     }
-    a:hover {
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      color: #0078d7;
+      margin-top: 0;
+    }
+
+    ul.course-list {
+      list-style: square;
+      margin-left: 25px;
+    }
+
+    ul.course-list li {
+      margin: 12px 0;
+    }
+
+    ul.course-list a {
+      color: #0078d7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    ul.course-list a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0078d7;
+      color: white;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #fff;
       text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
+<<<<<<< HEAD
   <h1>🌸 My Frontend Projects</h1>
   <ul>
     <li><a href="./freecodecamp/css-course/01-basics/business-card.html">FreeCodeCamp – Business Card</a></li>
     <li><a href="./freecodecamp/css-course/01-basics/to-do-list.html">FreeCodeCamp – To-Do List</a></li>
     <li><a href="./practice/">Frontend Mentor Projects</a></li>
   </ul>
+=======
+  <header>
+    <h1>🌸 Frontend Lernen</h1>
+    <p>My learning journey in frontend development</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="freecodecamp/basics/index.html">FreeCodeCamp – Basics</a></li>
+      <li><a href="freecodecamp/layouts/index.html">FreeCodeCamp – Layouts</a></li>
+      <li><a href="freecodecamp/advanced/index.html">FreeCodeCamp – Advanced</a></li>
+      <li><a href="freecodecamp/javascript/index.html">FreeCodeCamp – JavaScript</a></li>
+      <li><a href="practice/index.html">Frontend Mentor Projects</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Welcome to My Study Portal</h2>
+      <p>
+        Here I collect my progress in learning web development. Each section contains 
+        exercises and small projects built during my studies at FreeCodeCamp and Frontend Mentor.
+      </p>
+
+      <ul class="course-list">
+        <li><strong>Basics:</strong> HTML & CSS fundamentals, structure, and elements.</li>
+        <li><strong>Layouts:</strong> Flexbox, Grid, and responsive design.</li>
+        <li><strong>Advanced:</strong> Animations, pseudo-classes, and accessibility.</li>
+        <li><strong>JavaScript:</strong> Interactivity and DOM manipulation.</li>
+        <li><strong>Frontend Mentor:</strong> Real UI challenges and design implementation.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Nataliia Svitlychna — <a href="https://github.com/nataliasvi89">GitHub Profile</a></p>
+  </footer>
+>>>>>>> 5ca696a (Update index.html structure and navigation)
 </body>
 </html>
