@@ -8,26 +8,37 @@
       :root {
         --brand: #0078d7;
       }
+
+      /* Общая структура страницы */
       body {
         margin: 0;
         font-family: Arial, sans-serif;
         background: #f6f8fa;
         color: #333;
         line-height: 1.6;
+
+        /* добавляем, чтобы футер был прижат внизу */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
+
       header {
         background: var(--brand);
         color: #fff;
         padding: 24px 12px;
         text-align: center;
       }
+
       header h1 {
         margin: 0;
         font-size: 1.8rem;
       }
+
       nav {
         background: #005fa3;
       }
+
       nav ul {
         margin: 0;
         padding: 10px 0;
@@ -37,67 +48,80 @@
         justify-content: center;
         flex-wrap: wrap;
       }
+
       nav a {
         color: #fff;
         text-decoration: none;
         font-weight: 600;
       }
+
       nav a:hover {
         text-decoration: underline;
       }
+
       main {
         max-width: 900px;
+        min-width: 600px;
         margin: 36px auto;
         padding: 0 20px;
+        flex: 1; /* заставляем main занимать всё пространство */
       }
+
       section {
         background: #fff;
         padding: 22px;
         border-radius: 12px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
       }
+
       h2 {
         color: var(--brand);
         margin-top: 0;
       }
+
       ul.list {
         list-style: square;
         margin-left: 24px;
       }
+
       ul.list li {
         margin: 10px 0;
       }
+
       a.link {
         color: var(--brand);
         text-decoration: none;
       }
+
       a.link:hover {
         text-decoration: underline;
       }
+
       footer {
         text-align: center;
         padding: 16px 0;
-        margin-top: 40px;
         background: var(--brand);
         color: #fff;
+        margin-top: auto; /* прижимает футер вниз */
       }
     </style>
   </head>
+
   <body>
     <header>
       <h1>FreeCodeCamp – Basics (CSS)</h1>
       <p>
-        HTML/CSS basics: selectors, text, colors, lists, links, basic
-        typography.
+        HTML/CSS basics: selectors, text, colors, lists, links, basic typography.
       </p>
     </header>
 
     <nav aria-label="Section navigation">
       <ul>
         <li><a href="../../../index.html">⬅ Back to Main</a></li>
-        <li><a href="../layouts/index.html">Layouts CSS</a></li>
-        <li><a href="../advanced/index.html">Advanced CSS</a></li>
+        <li><a href="../02-layouts/index.html">Layouts CSS</a></li>
+        <li><a href="../03-advanced/index.html">Advanced CSS</a></li>
         <li><a href="../javascript/index.html">JavaScript</a></li>
+        <li><a href="../../../practice/index.html">Practice</a></li>
       </ul>
     </nav>
 
@@ -105,7 +129,6 @@
       <section aria-labelledby="projects">
         <h2 id="projects">Practice in this section</h2>
         <ul class="list">
-          <!-- Положи соответствующие файлы рядом с этим index.html (в ту же папку) -->
           <li><a class="link" href="business-card.html">Business Card</a></li>
           <li><a class="link" href="to-do-list.html">To-Do List</a></li>
         </ul>
