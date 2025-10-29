@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Projects</title>
+    <style>
+      :root {
+        --brand: #0078d7;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f6f8fa;
+        color: #333;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        background: var(--brand);
+        color: #fff;
+        padding: 24px 12px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+      nav {
+        background: #005fa3;
+      }
+      nav ul {
+        margin: 0;
+        padding: 10px 0;
+        list-style: none;
+        display: flex;
+        gap: 22px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        max-width: 900px;
+        margin: 36px auto;
+        padding: 0 20px;
+        flex: 1;
+      }
+      section {
+        background: #fff;
+        padding: 22px;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
+      h2 {
+        color: var(--brand);
+        margin-top: 0;
+      }
+      ul.list {
+        list-style: square;
+        margin-left: 24px;
+      }
+      ul.list li {
+        margin: 10px 0;
+      }
+      a.link {
+        color: var(--brand);
+        text-decoration: none;
+      }
+      a.link:hover {
+        text-decoration: underline;
+      }
+      footer {
+        text-align: center;
+        padding: 16px 0;
+        background: var(--brand);
+        color: #fff;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Practice Projects</h1>
+      <p>
+        Small creative works and experiments inspired by Frontend Mentor and
+        other sources.
+      </p>
+    </header>
+
+    <nav aria-label="Section navigation">
+      <ul>
+        <li><a href="../index.html">⬅ Back to Main</a></li>
+        <li>
+          <a href="../freecodecamp/css-course/01-basics/index.html"
+            >FreeCodeCamp Basics CSS</a
+          >
+        </li>
+        <li>
+          <a href="../freecodecamp/css-course/02-layouts/index.html"
+            >Layouts CSS</a
+          >
+        </li>
+        <li>
+          <a href="../freecodecamp/css-course/03-advanced/index.html"
+            >Advanced CSS</a
+          >
+        </li>
+        <li>
+          <a href="../freecodecamp/css-course/javascript/index.html"
+            >JavaScript</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section aria-labelledby="projects">
+        <h2 id="projects">My Practice Works</h2>
+        <ul class="list">
+          <li><a class="link" href="index.html">Portfolio Landing Page</a></li>
+          <li>
+            <a class="link" href="calculator.html">Responsive Calculator</a>
+          </li>
+          <li>
+            <a class="link" href="weather-app.html">Weather App Design</a>
+          </li>
+        </ul>
+        <p>
+          <em
+            >Each project demonstrates practical application of HTML, CSS, and
+            JavaScript skills.</em
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>© 2025 Nataliia Svitlychna</footer>
+  </body>
+</html>
